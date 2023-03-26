@@ -1,0 +1,43 @@
+@mixin weight{
+	font-weight: 900;
+
+}
+.footer {
+	background-color: $background-color_1;
+	color: $color_2;
+	p {
+		margin: 0;
+		color: $color_4;
+	}
+}
+footer {
+	h4 {
+		@include weight;
+	}
+}
+h5 {
+	@include weight;
+}
+.link {
+	cursor: pointer;
+	transition: all 0.5s;
+	&:hover {
+		color: $color_5;
+		padding-left: 5px;
+		transition: all 0.5s;
+	}
+}
+.bi-arrow-right-short {
+	font-size: 18px;
+	color: $color_2;
+}
+.social {
+	color: $color_2;
+	font-size: 24px;
+	transition: all 0.4s;
+	&:hover {
+		color: $color_6;
+		transition: all 0.4s;
+		cursor: pointer;
+	}
+}

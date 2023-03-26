@@ -1,0 +1,42 @@
+@mixin parrafo-size{
+	font-size: 2rem;
+	font-weight: 700;
+
+}
+
+
+.main {
+	background: url(../assets/img/back-ground.jpg);
+	background-size: cover;
+	height: 100vh;
+	background-position: 100%;
+	p {
+		@include parrafo-size;
+		
+	}
+}
+.text {
+	padding-top: 3rem;
+}
+.btn {
+	height: 50px;
+	width: 200px;
+	color: $color_3;
+}
+.details {
+	h1 {
+		@include parrafo-size;
+		color: $color_2;
+		align-items: center;
+		justify-content: center;
+		padding-left: 30%;
+	}
+	.p .lead {
+		@include parrafo-size;
+		
+	}
+}
+h2 {
+	font-size: 1.5rem;
+}
+
